@@ -514,13 +514,13 @@
       actionBar.style.display = "grid";
       
       const startObj = parseDateKey(selectedStart);
-      const msg = `Salam! Mən ${startObj.getDate()} ${MONTH_NAMES[startObj.getMonth() + 1]} tarixindən etibarən Elsad Villa-da rezervasiya haqqında məlumat almaq istəyirəm.`;
+      const msg = `Salam! Mən ${startObj.getDate()} ${MONTH_NAMES[startObj.getMonth() + 1]} tarixindən etibarən Rəşad Villa-da rezervasiya haqqında məlumat almaq istəyirəm.`;
       waLink.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
     } else {
       statusTitle.textContent = "TARİX SEÇİN"; datesText.textContent = "Giriş və çıxış tarixini klikləyin";
       infoBox.classList.remove("active");
       actionBar.style.display = "none";
-      waLink.href = `https://wa.me/${WHATSAPP_NUMBER}?text=Salam! Elsad Villa haqqında məlumat almaq istəyirəm.`;
+      waLink.href = `https://wa.me/${WHATSAPP_NUMBER}?text=Salam! Rəşad Villa haqqında məlumat almaq istəyirəm.`;
     }
   }
 
